@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.login-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+    color: #DB6E09; /* orange color */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #DB6E09; /* orange color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.google-login-btn, .apple-login-btn {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.google-login-btn img, .apple-login-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-login-btn {
+    background-color: #fff;
+    color: #666;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 500px; /* Add a fixed height to the container */
+    overflow-y: scroll; /* Add a scrollbar to the container */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Reduce the margin between form groups */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="tel"], input[type="number"], select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px; /* Reduce the margin between form fields */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+#success-message {
+    display: none;
+    position: fixed; /* Position the success message fixed */
+    top: 50%; /* Position the success message 50% from the top */
+    left: 50%; /* Position the success message 50% from the left */
+    transform: translate(-50%, -50%); /* Translate the success message to the center */
+    background-color: #f0f0f0; /* Set the background color of the success message */
+    padding: 20px; /* Add padding to the success message */
+    border: 1px solid #ccc; /* Add a border to the success message */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow to the success message */
+}
+
+#success-message p {
+    font-size: 18px; /* Set the font size of the success message */
+    font-weight: bold; /* Set the font weight of the success message */
+    color: #666; /* Set the text color of the success message */
+}
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto; /* Change the height to auto */
+    overflow-y: hidden; /* Add overflow-y: hidden */
+}
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Add this line */
+    width: 100vw; /* Add this line */
+    margin: 0; /* Add this line */
+    padding: 0; /* Add this line */
+}
