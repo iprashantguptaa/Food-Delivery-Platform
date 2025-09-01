@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <a href="#">Delivery<span>Delights</span></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#special">Most Ordered</a></li>
+          <li><a href="#client">Reviews</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    <div class="container">
+        <h2>Please Enter Your Details </h2>
+        <form id="delivery-form" action="submit_order.php" method="POST">
+          
+
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required />
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="number" id="mobile" name="mobile" required />
+            </div>
+            <div class="form-group">
+                <label for="order">Order Name:</label>
+                <input type="text" id="order" name="order" required />
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required />
+            </div>
+            <div class="form-group">
+                <label for="payment">Payment Method:</label>
+                <select id="payment" name="payment" required>
+                    <option value="cash-on-delivery">Cash on Delivery</option>
+                </select>
+            </div>
+            
+         <button type="submit" id="order-now">Order Now</button>
+        </form>
+     
+    </div>
+    <div id="success-message" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #f0f0f0; padding: 20px; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <p>Your Order Has Been Placed, Our team will contact you soon.</p>
+    </div>
+    <div id="success-message" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #f0f0f0; padding: 20px; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+      <p>Your Order Has Been Placed, Our team will contact you soon.</p>
+  </div>
+  <script>
+    // Check if the success parameter is set in the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        // Display the success message
+        setTimeout(function() {
+            document.getElementById('success-message').style.display = 'block';
+        }, 1000);
+    }
+</script>
+
+</body>
+<footer class="footer" id="contact">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="logo footer__logo">
+          <a href="#">Delivery<span>Delights</span></a>
+        </div>
+        <p class="section__description">
+          "Delivering more than just food, we bring people together, one delightful meal at a time, because sharing is caring!"
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <ul class="footer__links">
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Specials</a></li>
+          <li><a href="#">Meal Deals</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Information</h4>
+        <ul class="footer__links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul class="footer__links">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Delivery Delights. All rights reserved.
+    </div>
+  </footer>
+</html>
